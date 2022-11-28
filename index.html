@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mergim CV</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" media="screen and (max-width: 800px" href="./media.css">
     <link rel="stylesheet" href="./style.css">
     <script src="./main.js"></script>
 
@@ -15,13 +15,16 @@
     
     <nav class="navbar">
         <ul>
-            <li class="li.item"><a href="#">About Me</a></li>
-            <li class="li.item"><a href="#">Knowledge</a></li>
-            <li class="li.item"><a href="#">Experience</a></li>
-            <li class="li.item"><a href="#">Contact</a></li>
+            <li class="li.item"><a href="#aboutme">About Me</a></li>
+            <li class="li.item"><a href="#knowledge">Knowledge</a></li>
+            <li class="li.item"><a href="#experience">Experience</a></li>
+            <li class="li.item"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
+    
+    <div class="content-forEagle">
+        <img class="eagle" src="./img/eagle.png" alt="flying bird">
+    </div>
 
     <!--  IKON FÖR MENY
    <i class="fa-sharp fa-solid fa-bars"></i>
@@ -30,19 +33,22 @@
 
     <section class="homepage">
         <div class="maincontent">
-            <h1 class="nameinfo">MERGIM SHALA</h1>
+            <h1 id="infotext" class="nameinfo">MERGIM SHALA</h1>
             <h2 class="nameinfo">Frontend Developer</h2>
             <button class="btn"><a class="linktoCV" href="./mergimshala.pdf">Link to CV</a></button>
             <button onclick="changeMode()" id="btn"></button>
         </div>
         
     </section>
+
     <div>
+        <br>
+        <br id="aboutme">
         <h1 class="headings h1-to-all-sections">ABOUT ME</h1>
+        <br>
     </div>
         
-    <section class="content-aboutme">
-        
+    <section class="aboutme">
         <div>
             <img class="picofme" src="./img/picofme.jpg" alt="">
         </div>
@@ -58,7 +64,8 @@
                         get the chance to learn the the industry for real.
                         <br>
                         <br>
-                        My other passion is to play chess at my sparetime, it makes me relax. As a person I'm driven and forward thinking. I like to work
+                        My other passion is to play chess at my sparetime, it makes me relax. 
+                        As a person I'm driven and forward thinking. I like to work
                         independently, while I know from football experience that 
                         I'm a great team player and that working as a team is 
                         important for me. I'm easy to deal with and adaptable 
@@ -71,7 +78,9 @@
 
 
     <section class="knowledge">
+        <br id="knowledge">
         <h1 class="headings h1-to-all-sections">KNOWLEDGE</h1>
+        <br>
         <div class="rows">
             <div class="box1">
                 <i class="fa-solid fa-code html-icon"></i>
@@ -84,23 +93,76 @@
             <div class="box1">
                 <img class="ui-ux" src="./img/ui.png" alt="">
                 <h1 class="headings">UI/UX</h1>
-                <p>One of the projects we were given was to modernize a "less good" website with 
-                    HTML & CSS where the focus was on the visuals and responsiveness from construction to 
-                    finished product. The project's goal has been from the beginning that problems we encountered should
-                     be solved with communication and intentions which are one of my strengths.</p>
+                <p>I have done an analysis on the user-interface on a website that we 
+                    chose where the aim was to examine the five different parameters.
+                    The focus of this task was to investigate the user-experience on the
+                    site to work with can be improved. One design tool we used to work 
+                    with was Figma to create the improvements of the site.
+                </p>
             </div>
             <div class="box1">
                 <i class="fa-brands fa-js js-icon"></i>
                 <h1 class="headings">JavaScript</h1>
-                <p>One of the projects we were given was to modernize a "less good" website with 
-                    HTML & CSS where the focus was on the visuals and responsiveness from construction to 
-                    finished product. The project's goal has been from the beginning that problems we encountered should
-                     be solved with communication and intentions which are one of my strengths.</p>
+                <p>I have so far been working with the basics of JavaScript where the focus so far have been to
+                    become familiar with the programming language, how to make a website interactive and dynamic.
+                    <br>
+                    <br>
+                    The first assignment was to create an interactive text based story where the focus was to do
+                    changes on the website with JavaScript functions and events. 
+                </p>
             </div>
-
         </div>
-
     </section>
 
+    <div>
+        <br id="experience">
+        <h1 class="headings h1-to-all-sections">EXPERIENCE</h1>
+        <br>
+    </div>
+    <section class="experience">
+        <div>
+            <p>In my previous work experience, I have mostly played soccer my 
+                whole life. I got the opportunity to test my wings abroad as a 
+                full-time professional in Albania. Otherwise I have had a few 
+                part-time jobs at schools when I played in Sweden. My duty was 
+                to act as a role model for these youths and to support and build 
+                a community in times of difficulty. 
+                <br>
+                <br>
+                Other tasks consisted of 
+                planning, directing and leading employees when I acted as a 
+                deputy manager during the summer shift. Most of my life have 
+                been playing soccer which has been my job.
+                <br>
+                <br>
+                I have always worked with other people in teams which have been on of my main strengths.
+                Year 2022 was the year that I got my eyes on web development. I tried coding myself which
+                I thought was fun including problem solving and decided that this is what I want to work
+                with in the future. 
+                </p>
+        </div>
+    </section>
+
+    <div>
+        <br id="contact">
+        <h1 class="headings h1-to-all-sections">CONTACT</h1>
+    </div>
+    <section class="contactme">
+        <form action="" class="form">
+            <input type="name" name="name" class="input" placeholder="Name">
+            <input type="email" name="email" class="input" placeholder="Enter Your Mail">
+            <textarea name="msg" id="msg" cols="30" rows="3"></textarea>
+            <input type="submit" value="SEND" id="send">
+        </form>
+    </section>
+<footer>
+    <div class="footer-content">
+        <p class="footer-p">Made by Mergim Shala &copy; 2022</p>
+
+        <a href="mailto:mergim.shala@medieinstitutet.se" class="fa-regular fa-envelope"></a>
+        <a href="https://github.com/mergimshalaa" class="fa-brands fa-github"></a>
+        <a href="https://www.linkedin.com/in/mergim-shala-230691220/" class="fa-brands fa-linkedin"></a>
+    </div>
+</footer>
 </body>
 </html>
