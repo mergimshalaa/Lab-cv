@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/*--------------------NAVBAR--------------------*/
+/*--------------------------------------------------NAVBAR-----------------------------------------------------------------*/
 
 .navbar {
     display: flex;
@@ -17,7 +17,7 @@
 
 .navbar ul {
     display: flex;
-    margin: 20px 0px;
+    margin: 15px 0px;
     list-style: none;
     align-items: center;
 }
@@ -77,13 +77,35 @@
     background-color: rgb(6, 4, 4);
 }
 
-/*-------------------home page--------------*/
+.content-forEagle {
+    width: 100%;
+    background-color: rgba(85, 74, 74, 0.5);
+}
+
+
+/*-----------------------------------------------------------HOME PAGE---------------------------------------------------------------*/
+.eagle {
+    width: 3rem;
+    height: 3rem;
+    opacity: .7;
+    animation-name: fly;
+    animation-duration: 8s;
+}
+
+@keyframes fly {
+    from {
+        transform: translateX(-3em);
+    }
+    to {
+        transform: translateX(90rem);
+    }
+}
 .homepage {
     display: flex;
     background-color: rgba(85, 74, 74, 0.5);
     flex-direction: column;
     color: black;
-    height: 840px;
+    height: 830px;
 }
 
 .homepage::before {
@@ -107,10 +129,7 @@
     flex-direction: column;
     align-items: center;
     font-size: 1.5rem;
-    position: absolute;
-    top: 25%;
-    right: 10%;
-    opacity: .7;
+    margin: auto;
 }
 .nameinfo {
     font-family: Arial, Helvetica, sans-serif;
@@ -144,17 +163,16 @@
     box-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black;
 }
 
-/*-------------------ABOUT ME-------------*/
-.content-aboutme {
+/*-------------------------------------------------ABOUT ME----------------------------------------------------------*/
+.aboutme {
     display: flex;
-
     box-sizing: border-box;
-    flex-direction: column;
     padding: 2rem;
     margin-left: 15%;
     margin-right: 15%;
     background-color: whitesmoke;
     border-radius: 10px;
+    box-shadow: 0 0 30px white;
 }
 
 .h1-to-all-sections {
@@ -172,7 +190,8 @@
     width: 27rem;
     height: 25rem;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 30px;
+    padding: 20px;
 }
 
 #intro {
@@ -180,21 +199,25 @@
     flex-direction: column;
     text-align: justify;
 }
+p {
+    line-height: 1.2;
+}
 
-/*---------------KNOWLEGDE------------*/
+/*---------------------------------------------------KNOWLEGDE-------------------------------------------------------*/
 
 .knowledge {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    
+}
 
+.skills-list {
+    margin-bottom: 40px;
 }
 
 .rows {
     display: flex;
     justify-content: space-around;
-    
 }
 
 .box1 {
@@ -202,8 +225,8 @@
     flex-direction: column;
     width: 350px;
     align-items: center;
-    border: 10px solid gold;
-    height: 450px;
+    border: 10px solid goldenrod;
+    height: 400px;
     text-align: justify;
     padding: 20px;
     border-radius: 10px;
@@ -216,8 +239,87 @@
     width: 25px;
     height: 25px;
 }
+html {
+    scroll-behavior: smooth;
+}
 
+/*--------------------------------------------EXPERIENCE-----------------------------------------------------------*/
+.experience {
+   margin-left: 30%;
+   margin-right: 30%;
+   background-color: whitesmoke;
+   display: flex;
+   padding: 20px;
+   text-align: justify;
+   border-radius: 10px;
+   box-shadow: 0 0 30px white;
 
+}
 
+/*-----------------------------------------------CONTACT-------------------------------------------------------------*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 35px 0px;
+}
+#msg {
+    width: 20%;
+    padding: 10px;
+    outline: none;
+    margin: 15px;
+}
+#send {
+    margin: 40px;
+    padding: 10px;
+    width: 10%;
+    border: 1px solid black;
+    font-family: 'poppins';
+    background-color: white;
+}
+
+#send:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black;
+}
+.input {
+    padding: 10px;
+    margin: 15px;
+    width: 20%;
+    outline: none;
+}
+
+/*----------------------------------------------FOOTER------------------------------------------------------*/
+.footer-content {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: black;
+    padding-block: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 6rem;
+    
+    
+}
+
+.footer-p {
+    padding-right: 1rem;
+}
+
+.fa-github, .fa-envelope, .fa-linkedin {
+    font-size: 2rem;
+    margin: .3em;
+    color: white;
+    text-decoration: none;
+}
 
 
