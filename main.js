@@ -29,3 +29,6 @@ function setOldPic(event) {
     event.target.src = "./img/picofme.jpg";
 }
 
+function playSound() {
+    document.querySelector('#sound').play();
+}
