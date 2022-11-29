@@ -12,18 +12,20 @@
 
 </head>
 <body class="night">
+    <!-----------------------------NAVBAR-------------------->
     <nav class="navbar">
         <ul>
-            <li class="li.item"><a href="#aboutme">About Me</a></li>
-            <li class="li.item"><a href="#knowledge">Knowledge</a></li>
-            <li class="li.item"><a href="#experience">Experience</a></li>
-            <li class="li.item"><a href="#contact">Contact</a></li>
-        </ul>
-        
-    </nav>
-        <!-- IKON FÖR MENY
+            <audio src="./audio/click.wav" id="sound" style="display: none;"></audio>
+            <li class="li.item"><a href="#aboutme"onclick="playSound()">About Me</a></li>
+            <li class="li.item"><a href="#knowledge"onclick="playSound()">Knowledge</a></li>
+            <li class="li.item"><a href="#experience" onclick="playSound()">Experience</a></li>
+            <li class="li.item"><a href="#contact" onclick="playSound()">Contact</a></li>
             <i class="fa-sharp fa-solid fa-bars"></i>
-        -->
+        </ul>
+    </nav>
+        
+            
+    <!------------------------------HOMEPAGE-------------------->
     
     <div class="content-forEagle">
         <img class="eagle" src="./img/eagle.png" alt="flying bird">
@@ -39,8 +41,9 @@
         
     </section>
 
+    <!------------------------------ABOUT ME-------------------->
     <div>
-        <br>
+        
         <br id="aboutme">
         <h1 class="headings h1-to-all-sections">ABOUT ME</h1>
         <br>
@@ -74,7 +77,7 @@
         </div>
     </section>
 
-
+    <!------------------------------KNOWLEDGE-------------------->
     <section class="knowledge">
         <br id="knowledge">
         <h1 class="headings h1-to-all-sections">KNOWLEDGE</h1>
@@ -84,9 +87,10 @@
                 <i class="fa-solid fa-code html-icon"></i>
                 <h1 class="headings">HTML & CSS</h1>
                 <p>One of the projects we were given was to modernize a "less good" website with 
-                    HTML & CSS where the focus was on the visuals and responsiveness from construction to 
-                    finished product. The project's goal has been from the beginning that problems we encountered should
-                     be solved with communication and intentions which are one of my strengths.</p>
+                    HTML & CSS where the focus was on the visuals and responsiveness from 
+                    construction to finished product. The project's goal has been from 
+                    the beginning that problems we encountered shouldbe solved with 
+                    communication and intentions which are one of my strengths.</p>
             </div>
             <div class="box1">
                 <img class="ui-ux" src="./img/ui.png" alt="">
@@ -101,22 +105,25 @@
             <div class="box1">
                 <i class="fa-brands fa-js js-icon"></i>
                 <h1 class="headings">JavaScript</h1>
-                <p>I have so far been working with the basics of JavaScript where the focus so far have been to
-                    become familiar with the programming language, how to make a website interactive and dynamic.
+                <p>I have so far been working with the basics of JavaScript where 
+                    the focus so far have been to become familiar with the programming 
+                    language, how to make a website interactive and dynamic.
                     <br>
                     <br>
-                    The first assignment was to create an interactive text based story where the focus was to do
-                    changes on the website with JavaScript functions and events. 
+                    The first assignment was to create an interactive text based 
+                    story where the focus was to do changes on the website with 
+                    JavaScript functions and events. 
                 </p>
             </div>
         </div>
     </section>
-
+    <!------------------------------EXPERIENCE-------------------->
     <div>
         <br id="experience">
         <h1 class="headings h1-to-all-sections">EXPERIENCE</h1>
         <br>
     </div>
+
     <section class="experience">
         <div>
             <p>In my previous work experience, I have mostly played soccer my 
@@ -141,10 +148,12 @@
         </div>
     </section>
 
+    <!------------------------------CONTACT-------------------->
     <div>
         <br id="contact">
         <h1 class="headings h1-to-all-sections">CONTACT</h1>
     </div>
+
     <section class="contactme">
         <form action="" class="form">
             <input type="name" name="name" class="input" placeholder="Name">
@@ -153,16 +162,15 @@
             <input type="submit" value="SEND" id="send">
         </form>
     </section>
-<footer>
-    <div class="footer-content">
-        <p class="footer-p">Mergim Shala &copy; 2022</p>
-
-        <a href="mailto:mergim.shala@medieinstitutet.se" class="fa-regular fa-envelope"></a>
-        <a href="https://github.com/mergimshalaa" class="fa-brands fa-github"></a>
-        <a href="https://www.linkedin.com/in/mergim-shala-230691220/" class="fa-brands fa-linkedin"></a>
-        <a href="https://www.facebook.com/mergim.shala.98/" class="fa-brands fa-facebook"></a>
-        
-    </div>
-</footer>
+    <!------------------------------FOOTER-------------------->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-p">Mergim Shala &copy; 2022</p>
+            <a href="mailto:mergim.shala@medieinstitutet.se" class="fa-regular fa-envelope"></a>
+            <a href="https://github.com/mergimshalaa" class="fa-brands fa-github"></a>
+            <a href="https://www.linkedin.com/in/mergim-shala-230691220/" class="fa-brands fa-linkedin"></a>
+            <a href="https://www.facebook.com/mergim.shala.98/" class="fa-brands fa-facebook"></a>
+        </div>
+    </footer>
 </body>
 </html>
