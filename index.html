@@ -12,20 +12,25 @@
 
 </head>
 <body class="night">
-    <!-----------------------------NAVBAR-------------------->
-    <nav class="navbar">
+    <!-----------------------------NAVBAR---------------------->
+    <header>
+    <nav>
         <ul>
-            <audio src="./audio/click.wav" id="sound" style="display: none;"></audio>
-            <li class="li.item"><a href="#aboutme"onclick="playSound()">About Me</a></li>
-            <li class="li.item"><a href="#knowledge"onclick="playSound()">Knowledge</a></li>
-            <li class="li.item"><a href="#experience" onclick="playSound()">Experience</a></li>
-            <li class="li.item"><a href="#contact" onclick="playSound()">Contact</a></li>
-            <i class="fa-sharp fa-solid fa-bars"></i>
+            <div class="menu">
+                <audio src="./audio/click.wav" id="sound" style="display: none;"></audio>
+                <li class="li.item"><a href="#aboutme">About Me</a></li>
+                <li class="li.item"><a href="#knowledge">Knowledge</a></li>
+                <li class="li.item"><a href="#experience">Experience</a></li>
+                <li class="li.item"><a href="#contact">Contact</a></li>
+        </div>
+            <div class="navbar-responsive">
+                <i onclick="toggleMenu()" class="fas fa-bars"></i>
+            </div>
         </ul>
     </nav>
-        
-            
-    <!------------------------------HOMEPAGE-------------------->
+    </header>
+
+    <!------------------------------HOMEPAGE-------------------------------->
     
     <div class="content-forEagle">
         <img class="eagle" src="./img/eagle.png" alt="flying bird">
@@ -36,12 +41,12 @@
             <h1 id="infotext" class="nameinfo">MERGIM SHALA</h1>
             <h2 class="nameinfo">Frontend Developer</h2>
             <button class="btn-cv"><a class="linktoCV" href="./mergimshala.pdf">Link to CV</a></button>
-            <button onclick="changeMode()" id="btn"></button>
+            <button onclick="changeMode()" id="btn-toggle"></button>
         </div>
         
     </section>
 
-    <!------------------------------ABOUT ME-------------------->
+    <!-----------------------------------ABOUT ME--------------------------->
     <div>
         
         <br id="aboutme">
@@ -50,7 +55,7 @@
     </div>
         
     <section class="aboutme">
-        <div>
+        <div class="imagediv">
             <img class="picofme" src="./img/picofme.jpg" alt="">
         </div>
         <div id="div-pic">
@@ -77,7 +82,7 @@
         </div>
     </section>
 
-    <!------------------------------KNOWLEDGE-------------------->
+    <!-------------------------------------KNOWLEDGE---------------------------->
     <section class="knowledge">
         <br id="knowledge">
         <h1 class="headings h1-to-all-sections">KNOWLEDGE</h1>
@@ -106,7 +111,7 @@
                 <i class="fa-brands fa-js js-icon"></i>
                 <h1 class="headings">JavaScript</h1>
                 <p>I have so far been working with the basics of JavaScript where 
-                    the focus so far have been to become familiar with the programming 
+                    the focus been to become familiar with the programming 
                     language, how to make a website interactive and dynamic.
                     <br>
                     <br>
@@ -117,7 +122,7 @@
             </div>
         </div>
     </section>
-    <!------------------------------EXPERIENCE-------------------->
+    <!------------------------------EXPERIENCE--------------------------------->
     <div>
         <br id="experience">
         <h1 class="headings h1-to-all-sections">EXPERIENCE</h1>
@@ -148,7 +153,7 @@
         </div>
     </section>
 
-    <!------------------------------CONTACT-------------------->
+    <!------------------------------CONTACT------------------------------>
     <div>
         <br id="contact">
         <h1 class="headings h1-to-all-sections">CONTACT</h1>
@@ -158,11 +163,11 @@
         <form action="" class="form">
             <input type="name" name="name" class="input" placeholder="Name">
             <input type="email" name="email" class="input" placeholder="Enter Your Mail">
-            <textarea name="msg" id="msg" cols="30" rows="3"></textarea>
+            <textarea name="msg" id="msg" cols="30" rows="3" placeholder="Not avaible right now. Email me or contact me on linkedin below."></textarea>
             <input type="submit" value="SEND" id="send">
         </form>
     </section>
-    <!------------------------------FOOTER-------------------->
+    <!---------------------------------FOOTER---------------------------->
     <footer>
         <div class="footer-content">
             <p class="footer-p">Mergim Shala &copy; 2022</p>
