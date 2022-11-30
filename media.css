@@ -2,7 +2,7 @@
 
 @media (max-width: 480px) {
     .menu.show {
-        width: 80%;
+        width: 100%;
         top: 0;
         right: 0;
         height: 55vh;
@@ -41,13 +41,17 @@
     .navbar-responsive {
         height: 1.4rem;
     }
+    .footer-content p {
+        margin-left: 1rem;
+        
+    }
 }
 
 
 /*----------------tablet----------------*/
 @media (max-width: 768px) {
     .menu.show {
-        width: 90%;
+        width: 100%;
         top: 0;
         right: 0;
         height: 55vh;
@@ -83,15 +87,17 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
     .aboutme {
         flex-direction: column;
+        max-width: 70%;
      }
     
      .picofme {
         flex-direction: column;
         width: 18rem;
         height: 18rem;
+        max-width: 100%;
      }
      .imagediv {
         text-align: center;
@@ -104,17 +110,10 @@
 @media (max-width: 1200px) {
      .rows, .box1 {
         flex-wrap: wrap;
-        margin-top: 2rem;
-        
+        margin-top: 1.3rem;
        }
-      
+       .box1 {
+        margin-left: 25px;
+        margin-right: 25px;
+       }
 }
-
-
-
-/*utgå t mobil ---- max-width: minst 360 upp till 480 px*/
-
-/*tablet ------ från 480 - 768*/
-
-/*allt över 768px ----- för desktop 
-    
