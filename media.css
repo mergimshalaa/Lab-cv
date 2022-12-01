@@ -108,7 +108,7 @@
 @media (max-width: 1120px) {
      .rows, .box1 {
         flex-wrap: wrap;
-        margin-top: 1rem;
+        margin-top: .9rem;
        }
        .box1 {
         margin-left: 20px;

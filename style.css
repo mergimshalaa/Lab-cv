@@ -13,7 +13,6 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 99999;
-    
 }
 .menu {
     display: flex;
@@ -257,20 +256,23 @@ a:hover {color: goldenrod;}
     text-align: justify;
 }
 p { line-height: 1.2; }
-/*---------------------------------------------------KNOWLEGDE-----------------------------------------------*/
+/*---------------------------------------------------SKILLS-----------------------------------------------*/
 
-.knowledge {
+.skills {
     display: flex;
     flex-direction: column;
 }
 
-.skills-list {
-    margin-bottom: 40px;
+.skills-h1 {
+    color: darkgray;
+    font-size: 32px;
+    text-align: center;
 }
 
 .rows {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 1rem;
 }
 
 .box1 {
