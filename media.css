@@ -1,22 +1,9 @@
 /*-----------------------------Mobile----------------------------------*/
 
 @media (max-width: 480px) {
-    .menu.show {
-        width: 100%;
-        top: 0;
-        right: 0;
-        height: 50%;
-        position: fixed;
-        background-color: rgba(58, 56, 56, 1);
-        transition: all 0.2s ease-in-out;
-        display: block;
-        z-index: 1;
-    }
-    .menu {
-        display: none;
-    }
     .menu li {
         margin-top: 40px;
+        padding-left: 20px;
     }
     .menu li a {
         padding: 10px;
@@ -44,7 +31,6 @@
         margin: auto;
         width: 310px;
         height: 50%;
-        
     }
 }
 
@@ -54,8 +40,7 @@
     .menu.show {
         width: 100%;
         top: 0;
-        right: 0;
-        height: 50%;
+        height: 100%;
         position: fixed;
         background-color: rgba(58, 56, 56, 1);
         transition: all 0.2s ease-in-out;
