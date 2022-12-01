@@ -3,12 +3,32 @@ window.addEventListener('DOMContentLoaded', main)
  * 
  */
 function main() {
-    const menuItems = Array.from(document.querySelectorAll('.menu > li'))
-    menuItems.map(i => {
-        i.addEventListener('click', playSound)
-    })
     setupImageHover()
+    setupMenu();
 }
+
+function setupMenu() {
+    const menuIcon = document.querySelector(".navbar-responsive i");
+    menuIcon.addEventListener('click', toggleMenu);
+
+    const menuItems = document.querySelectorAll('.menu > li')
+    for (const item of menuItems) {
+        item.addEventListener('click', () => {
+            toggleMenu()
+            playSound()
+        })
+    }
+}
+
+/**
+ * 
+ */
+ function toggleMenu() {
+    const menu = document.querySelector(".menu");
+    const close = document.querySelector(".fa-bars");
+    menu.classList.toggle('show')
+    close.classList.toggle('fa-times');
+} 
 
 /**
  * 
@@ -52,13 +72,3 @@ function changeMode() {
     const element = document.body;
     element.classList.toggle("night");
 }
-
-/**
- * 
- */
-function toggleMenu() {
-    const menu = document.querySelector(".menu");
-    const close = document.querySelector(".fa-bars");
-    menu.classList.toggle('show')
-    close.classList.toggle('fa-times');
-} 
