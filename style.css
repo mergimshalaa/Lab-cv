@@ -215,8 +215,8 @@ a:hover {color: goldenrod;}
     display: flex;
     box-sizing: border-box;
     padding: 1.5rem;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     background-color: whitesmoke;
     border-radius: 10px;
     box-shadow: 0 0 10px white;
@@ -290,8 +290,8 @@ html {
 
 /*--------------------------------------------EXPERIENCE-----------------------------------------------------*/
 .experience {
+   box-sizing: border-box;
    width: 400px;
-   height: 400px;
    background-color: whitesmoke;
    display: flex;
    padding: 20px;
@@ -299,8 +299,8 @@ html {
    border-radius: 10px;
    box-shadow: 0 0 10px white;
    margin: auto;
+   overflow: auto;
 }
-
 /*-----------------------------------------------CONTACT-------------------------------------------------------*/
 .contact {
     display: flex;
