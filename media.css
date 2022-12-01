@@ -1,4 +1,4 @@
-/*-----Mobile---------*/
+/*-----------------------------Mobile----------------------------------*/
 
 @media (max-width: 480px) {
     .menu.show {
@@ -11,14 +11,12 @@
         transition: all 0.2s ease-in-out;
         display: block;
         z-index: 1;
-    
     }
     .menu {
         display: none;
     }
     .menu li {
         margin-top: 40px;
-        
     }
     .menu li a {
         padding: 10px;
@@ -26,8 +24,6 @@
     }
     .eagle {
         margin-top: 4rem;
-        
-        
     }
     .fa-bars{
         display: block;
@@ -43,12 +39,16 @@
     }
     .footer-content p {
         margin-left: 1rem;
-        
+    }
+    .experience {
+        margin: auto;
+        width: 310px;
+        height: 500px;
     }
 }
 
+/*------------------------------Tablet-------------------------------------*/
 
-/*----------------tablet----------------*/
 @media (max-width: 768px) {
     .menu.show {
         width: 100%;
@@ -66,7 +66,6 @@
     }
     .menu li {
         margin-top: 40px;
-        
     }
     .menu li a {
         padding: 10px;
@@ -87,10 +86,11 @@
     }
 }
 
+/*---------------------------------LAPTOP screens--------------*/
+
 @media (max-width: 992px) {
     .aboutme {
         flex-direction: column;
-        max-width: 70%;
      }
     
      .picofme {
@@ -102,18 +102,16 @@
      .imagediv {
         text-align: center;
      }
-
 }
 
-
-/* DESKTOP */
-@media (max-width: 1200px) {
+/*-----------------------------DESKTOP--------------------------*/
+@media (max-width: 1120px) {
      .rows, .box1 {
         flex-wrap: wrap;
         margin-top: 1.3rem;
        }
        .box1 {
-        margin-left: 25px;
-        margin-right: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
        }
 }
