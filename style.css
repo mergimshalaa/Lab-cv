@@ -186,7 +186,6 @@ a:hover {color: goldenrod;}
     border-style: none;
     background-color: white;
     border: 2px solid black;
-    
 }
 
 #btn-toggle:before {
@@ -221,16 +220,6 @@ a:hover {color: goldenrod;}
     background-color: whitesmoke;
     border-radius: 10px;
     box-shadow: 0 0 10px white;
-}
-
-
-@keyframes slide {
-    0% {
-        width: 0ch;
-    }
-    50%{
-        width: 11ch;
-    }
 }
 
 .h1-to-all-sections {
@@ -345,7 +334,6 @@ html {
 .input {
     padding: 10px;
     margin: 15px;
-    width: 17rem;
     outline: none;
 }
 
@@ -387,4 +375,3 @@ html {
 .color-white { color: white; }
 .position-absolute { position: absolute; }
 .cursor-pointer { cursor: pointer; }
-
