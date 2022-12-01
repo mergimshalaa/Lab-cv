@@ -134,7 +134,22 @@ a:hover {color: goldenrod;}
     letter-spacing: .1em;
     text-align: center;
     margin: 5px;
-    
+}
+
+#animateHeader {
+    width: 17ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: slide 3s infinite;
+}
+
+@keyframes slide {
+    0% {
+        width: 0ch;
+    }
+    50%{
+        width: 12ch;
+    }
 }
 
 .headings {
@@ -208,6 +223,18 @@ a:hover {color: goldenrod;}
     border-radius: 10px;
     box-shadow: 0 0 10px white;
 }
+
+
+@keyframes slide {
+    0% {
+        width: 0ch;
+    }
+    50%{
+        width: 11ch;
+    }
+}
+
+
 
 .h1-to-all-sections {
     color: darkgray;
