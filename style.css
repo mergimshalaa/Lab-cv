@@ -38,12 +38,10 @@ ul {
     text-transform: uppercase;
     font-weight: 600;
     position: relative;
-    padding: 2px;
+    padding: 5px;
 }
 
-a:hover {
-    color: goldenrod;
-}
+a:hover {color: goldenrod;}
 
 .menu li a::after {
     content: "";
@@ -52,14 +50,11 @@ a:hover {
     width: 0;
     height: 2px;
     background-color: white;
-    background-color: white;
     transition: 0.4s ease-in-out;
     position: absolute;
 }
 
-.menu li a:hover:after {
-    width: 100%;
-}
+.menu li a:hover:after { width: 100%; }
 
 .fa-bars, .fa-x {
     position: absolute;
@@ -191,21 +186,17 @@ a:hover {
     top: 1px;
     right: 32px;
     cursor: pointer;
-    
 }
 
 #btn-toggle.active:before {
     left: 31px;
     background-color: white;
-    
-}
-.night {
-    background-color: rgb(6, 4, 4);
 }
 
-.hide {
-    display: none;
-}
+.night { background-color: rgb(6, 4, 4); }
+
+.hide { display: none; }
+
 /*-------------------------------------------------ABOUT ME-------------------------------------------------------*/
 .aboutme {
     display: flex;
@@ -225,9 +216,7 @@ a:hover {
 }
 
 
-#div.pic {
-    display: flex;
-}
+#div.pic { display: flex; }
 
 .picofme {
     width: 26rem;
@@ -286,8 +275,8 @@ html {
 
 /*--------------------------------------------EXPERIENCE-----------------------------------------------------*/
 .experience {
-    width: 350px;
-    height: 460px;
+   width: 350px;
+   height: 460px;
    background-color: whitesmoke;
    display: flex;
    padding: 20px;
@@ -311,13 +300,14 @@ html {
     box-sizing: border-box;
     margin: 35px 0px;
 }
+
 #msg {
     padding: 10px;
     outline: none;
     resize: none;
     margin: 15px;
 }
-#send {
+.form-btn {
     margin: 40px;
     padding: 10px;
     width: 5.5rem;
@@ -326,10 +316,6 @@ html {
     background-color: white;
 }
 
-#send:hover {
-    cursor: pointer;
-    box-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black;
-}
 .input {
     padding: 10px;
     margin: 15px;
@@ -350,9 +336,7 @@ html {
     margin-top: 5rem;
 }
 
-.footer-p {
-    padding-right: 1rem;
-}
+.footer-p {padding-right: 1rem;}
 
 .fa-github, .fa-envelope, .fa-linkedin, .fa-facebook {
     font-size: 2rem;
@@ -369,3 +353,12 @@ html {
 .fa-linkedin:hover, .fa-facebook:hover {color: blue;}
 
 /*----------------------------------------------REUSABLE CLASSES-----------------------------------------------*/
+.display-flex { display: flex; }
+.text-align-center { text-align: center; }
+.align-items { align-items: center; }
+.position-relative { position: relative; }
+.flex-direction-column { flex-direction: column; }
+.color-white { color: white; }
+.position-absolute { position: absolute; }
+.cursor-pointer { cursor: pointer; }
+
