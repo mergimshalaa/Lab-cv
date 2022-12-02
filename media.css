@@ -1,103 +1,102 @@
 /*-----------------------------Mobile----------------------------------*/
 
 @media (max-width: 480px) {
-    .menu li {
-        margin-top: 40px;
-        padding-left: 20px;
-    }
-    .menu li a {
-        padding: 10px;
-        color: white;
-    }
-    .eagle {
-        margin-top: 4rem;
-    }
-    .fa-bars{
-        display: block;
-        font-size: 1.5rem;
-        z-index: 1000;
-    }
-    .picofme {
-        width: 1rem;
-        height: 1rem;
-    }
-    .navbar-responsive {
-        height: 1.4rem;
-    }
-    .footer-content p {
-        margin-left: 1rem;
-    }
-    .experience {
-        margin: auto;
-        width: 310px;
-        height: 50%;
-    }
+  .menu li {
+    margin-top: 40px;
+    padding-left: 20px;
+  }
+  .menu li a {
+    padding: 10px;
+    color: white;
+  }
+  .eagle {
+    margin-top: 4rem;
+  }
+  .fa-bars {
+    display: block;
+    font-size: 1.5rem;
+    z-index: 1000;
+  }
+  .picofme {
+    width: 1rem;
+    height: 1rem;
+  }
+  .navbar-responsive {
+    height: 1.4rem;
+  }
+  .footer-content p {
+    margin-left: 1rem;
+  }
+  .experience {
+    margin: auto;
+    width: 310px;
+    height: 50%;
+  }
 }
 
 /*------------------------------Tablet-------------------------------------*/
 
 @media (max-width: 768px) {
-    .menu.show {
-        width: 100%;
-        top: 0;
-        height: 100%;
-        position: fixed;
-        background-color: rgba(58, 56, 56, 1);
-        transition: all 0.2s ease-in-out;
-        display: block;
-        z-index: 1;
-    }
-    .menu {
-        display: none;
-    }
-    .menu li {
-        margin-top: 40px;
-    }
-    .menu li a {
-        padding: 10px;
-        color: white;
-    }
-    .eagle {
-        margin-top: 4rem;
-        
-        
-    }
-    .fa-bars{
-        display: block;
-        font-size: 1.5rem;
-        z-index: 1000;
-    }
-    .navbar-responsive {
-        height: 1.4rem;
-    }
+  .menu.show {
+    width: 100%;
+    top: 0;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(58, 56, 56, 1);
+    transition: all 0.2s ease-in-out;
+    display: block;
+    z-index: 1;
+  }
+  .menu {
+    display: none;
+  }
+  .menu li {
+    margin-top: 40px;
+  }
+  .menu li a {
+    padding: 10px;
+    color: white;
+  }
+  .eagle {
+    margin-top: 4rem;
+  }
+  .fa-bars {
+    display: block;
+    font-size: 1.5rem;
+    z-index: 1000;
+  }
+  .navbar-responsive {
+    height: 1.4rem;
+  }
 }
 
 /*---------------------------------LAPTOP screens--------------*/
 
 @media (max-width: 992px) {
-    .aboutme {
-        flex-direction: column;
-     }
-    
-     .picofme {
-        flex-direction: column;
-        width: 18rem;
-        height: 18rem;
-        max-width: 100%;
-     }
-     .imagediv {
-        text-align: center;
-     }
+  .aboutme {
+    flex-direction: column;
+  }
+
+  .picofme {
+    flex-direction: column;
+    width: 18rem;
+    height: 18rem;
+    max-width: 100%;
+  }
+  .imagediv {
+    text-align: center;
+  }
 }
 
 /*-----------------------------DESKTOP--------------------------*/
 @media (max-width: 1120px) {
-     .rows, .box1 {
-        flex-wrap: wrap;
-        margin-top: .9rem;
-       }
-       .box1 {
-        margin-left: 20px;
-        margin-right: 20px;
-       }
+  .rows,
+  .box1 {
+    flex-wrap: wrap;
+    margin-top: 0.9rem;
+  }
+  .box1 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }

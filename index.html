@@ -13,27 +13,25 @@
 </head>
 <body class="night">
     <!-----------------------------NAVBAR---------------------->
-    <header>
     <nav>
         <ul>
             <div class="menu">
-                <audio src="./audio/click.wav" id="sound" style="display: none;"></audio>
-                <li class="li.item"><a href="#aboutme">About Me</a></li>
-                <li class="li.item"><a href="#skills">SKILLS</a></li>
-                <li class="li.item"><a href="#experience">Experience</a></li>
-                <li class="li.item"><a href="#contact">Contact</a></li>
-        </div>
+                <audio src="./audio/classicClick.wav" id="sound" style="display: none;"></audio>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </div>
             <div class="navbar-responsive">
                 <i class="fas fa-bars"></i>
             </div>
         </ul>
     </nav>
-    </header>
 
     <!------------------------------HOMEPAGE-------------------------------->
     
     <div class="content-forEagle">
-        <img class="eagle" src="./img/eagle.png" alt="flying bird">
+        <img class="eagle" src="./img/eagle.png" alt="flying eagle">
     </div>
 
     <section class="homepage">
@@ -41,9 +39,8 @@
             <h1 id="animateHeader" class="nameinfo">MERGIM SHALA</h1>
             <h2 class="nameinfo">Frontend Developer</h2>
             <button class="btn-cv"><a class="linktoCV" href="./mergimshala.pdf">Link to CV</a></button>
-            <button onclick="changeMode()" id="btn-toggle"></button>
+            <button onclick="toggleTheme()" id="btn-toggle"></button>
         </div>
-        
     </section>
 
     <!-----------------------------------ABOUT ME--------------------------->
@@ -80,7 +77,7 @@
         </div>
     </section>
 
-    <!-------------------------------------SKILLS---------------------------->
+    <!-------------------------------------SKILLS----------------------------->
     <section class="skills">
         <br>
         <h1 class="skills-h1 h1-to-all-sections " id="skills">SKILLS</h1>
@@ -164,6 +161,7 @@
             <button class="form-btn">SEND</button>
         </form>
     </section>
+
     <!---------------------------------FOOTER---------------------------->
     <footer>
         <div class="footer-content">
@@ -171,7 +169,6 @@
             <a href="mailto:mergim.shala@medieinstitutet.se" class="fa-regular fa-envelope"></a>
             <a href="https://github.com/mergimshalaa" class="fa-brands fa-github"></a>
             <a href="https://www.linkedin.com/in/mergim-shala-230691220/" class="fa-brands fa-linkedin"></a>
-            <a href="https://www.facebook.com/mergim.shala.98/" class="fa-brands fa-facebook"></a>
         </div>
     </footer>
 </body>
