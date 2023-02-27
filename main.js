@@ -21,7 +21,6 @@ function setupMenu() {
   for (const item of menuItems) {
     item.addEventListener("click", () => {
       toggleMenu();
-      playSound();
     });
   }
 }
@@ -34,13 +33,6 @@ function toggleMenu() {
   const close = document.querySelector(".fa-bars");
   menu.classList.toggle("show");
   close.classList.toggle("fa-times");
-}
-
-/**
- * Plays sound when clicking on menu items.
- */
-function playSound() {
-  document.querySelector("#sound").play();
 }
 
 /**
